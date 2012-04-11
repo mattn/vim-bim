@@ -1,7 +1,7 @@
 
 let s:ROMAJI2HIRAGANA = bim#table#romaji2hiragana()
 let s:HIRAGANA2KATAKANA = bim#table#hiragana2katakana()
-let s:DICT_PATH = '~/vim-bim/dict/SKK-JISYO.S.utf8'
+let s:DICT_PATH = fnamemodify(expand('<sfile>:p:h') . '/../dict/SKK-JISYO.S.utf8', ':p')
 let s:DICT = []
 let s:bim = {}
 
